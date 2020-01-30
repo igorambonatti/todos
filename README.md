@@ -1,1 +1,1 @@
-### Template React sem redux + config vscode
+### Brincando com Todos
