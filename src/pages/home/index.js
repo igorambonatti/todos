@@ -17,7 +17,20 @@ export default function Home() {
   }, []);
   return (
     <Container>
-      {console.log(todos)}
+      <table>
+        <tr>
+          <th>userID</th>
+          <th>Id</th>
+          <th>Title</th>
+        </tr>
+        {todos.map(item => (
+          <tr key={item.id}>
+            <td>{item.userId}</td>
+            <td>{item.id}</td>
+            <td>{item.title}}</td>
+          </tr>
+        ))}
+      </table>
       <Content />
     </Container>
   );
