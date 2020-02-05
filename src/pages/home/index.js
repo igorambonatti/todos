@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Container, Content } from './styles';
+import { Container, Line } from './styles';
 
 import api from '../../services/api';
 
@@ -25,13 +25,12 @@ export default function Home() {
         </tr>
         {todos.map(item => (
           <tr key={item.id}>
-            <td>{item.userId}</td>
-            <td>{item.id}</td>
-            <td>{item.title}}</td>
+            <Line>{item.userId}</Line>
+            <Line>{item.id}</Line>
+            <Line>{item.title}</Line>
           </tr>
         ))}
       </table>
-      <Content />
     </Container>
   );
 }
